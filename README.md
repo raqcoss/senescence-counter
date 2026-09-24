@@ -33,12 +33,17 @@ Senescence Ratio (%) <-- number of nuclei inside blue $\beta$-gal stained zones 
   
   $D_{\mathrm{rel}} = \frac{\max(0, B - \frac{R + G}{2})}{V + \epsilon} \cdot 255 >$ `blue_dom_thresh`
 
+<img src="results/visualizations/blue_mask_example.png" alt="results for masking blue regions"/>
+
 * **Morphological Refinement:** Sequential morphological opening ($2\times$) and closing ($1\times$) using a $9 \times 9$ elliptical kernel.
 
 ### 3. Cell Matching & Counting
 * A nucleus is classified as **senescent** if its centroid lies within a segmented blue region.
 * If no centroid lies directly inside, the single nearest nucleus within `near_radius` is counted.
 * **Agglomerate Handling:** Blue regions strongly overlapped by agglomerates can be excluded using `ignore_aggl = True`. Otherwise, each agglomerated region contributes one senescent cell and increments the total nuclei count by one.
+
+<img src="results/visualizations/2.5_CPNCunknown_DIV26_counts.png" alt="final result"/>
+
 
 ### 4. Quantification
    $\text{Senescence\%} = \frac{\text{num senescent cells}}{\text{num total (single) nuclei}} \times 100$
