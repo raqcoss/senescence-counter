@@ -23,6 +23,9 @@ Senescence Ratio (%) <-- number of nuclei inside blue $\beta$-gal stained zones 
 * **Noise Reduction & Clean-up:** Optional sharpening ($3 \times 3$ kernel) followed by morphological opening (top-hat-like filtering with a $9 \times 9$ structuring element).
 * **Binarization:** Otsu thresholding on grayscale followed by small-structure removal to isolate single nuclei.
 
+<img src="data/visualizations/dapi_count_example.png" alt="results for counting DAPi stained nuclei" style="height: 300px; width:500px;"/>
+
+
 ### 2. Senescence ($\beta$-gal) Masking
 * **Color Space Transformation:** Conversion to HSV color space.
 * **Hue & Saturation Filtering:** Blue segmentation using hue windowing ($H \in [40, 140]$, $S \ge 10$, $V \ge 15$).
