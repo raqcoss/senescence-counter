@@ -47,8 +47,7 @@ Senescence Ratio (%) <-- number of nuclei inside blue $\beta$-gal stained zones 
 ```text
 senescence-counter/
 ├── data/                  # Sample/input images (DAPI and beta-gal)
-├── notebooks/             # Exploratory analysis & prototyping
-│   └── pipeline.ipynb     # Main processing notebook
+├── sene_count.ipynb       # Main processing notebook
 ├── results/               # Output masks, overlays, and exported CSVs
 ├── README.md              # Project documentation
 └── requirements.txt       # Python dependencies
