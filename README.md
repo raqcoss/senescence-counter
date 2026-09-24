@@ -15,6 +15,9 @@ Given a pair of images per field of view (DAPI and $\beta$-gal), our pipeline pe
    $\text{Senescence\%} = \frac{\text{num senescent cells}}{\text{num total (single) nuclei}} \times 100$
 
 ## Contribuitors
-Raquel Cossío Ramírez - *code development*
-Maria Trejo - *model evaluation*
-Lorelei Xiadani Ayala Guerrero (Instituto de Fisiología Celular at UNAM)- *provided dataset of original pictures and human validation results*
+
+- Raquel Cossío Ramírez - *code development*
+
+- Maria Trejo - *model evaluation*
+
+- Lorelei Xiadani Ayala Guerrero (Instituto de Fisiología Celular at UNAM)- *provided dataset of original pictures and human validation results*
